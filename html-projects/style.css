@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background: #1f1f1f;
+    font-family: "Montserrat";
+}
+
+a>h2{
+    color: #00d000;
+    text-transform: capitalize;
+    display: inline;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a>h2:hover{
+    text-shadow: 1rem 1rem .3rem #00d000;
+}
+
+h1{
+    color: red;
+}
+
+.card-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 2% 5%;
+    height: 100%;
+}
+
+.card{
+    border-radius: .75rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(to right, #ffffff, #20b2aa);
+    transition: box-shadow 300ms ease-in-out;
+}
+
+.card:hover{
+    box-shadow: -.5rem -.5rem .5rem #00d000,
+    -1rem -1rem .1rem #00b7ff;
+}
+
+h2.card-head{
+    padding: 1%;
+    text-align: center;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+
+.card-body button{
+    font-size: 100%;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    margin-block: 1%;
+    background-color: transparent;
+    transition: transform 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+.card-body button:hover{
+    background-color: #00b7ff;
+    color: #ffffff;
+    box-shadow: .25rem .25rem .25rem #0000ff;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 480px) {
+    html{
+        font-size: 37.5%;
+    }
+
+    .card{
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    html{
+        font-size: 62.5%;
+    }
+}
