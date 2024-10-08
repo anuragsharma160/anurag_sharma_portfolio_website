@@ -20,7 +20,7 @@ body{
     /* background: rgb(0, 0, 71); */
     padding: 2% 5%;
     font-family: "Montserrat", "sansserif";
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container{
